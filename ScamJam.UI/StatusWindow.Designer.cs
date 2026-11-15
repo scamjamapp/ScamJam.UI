@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             label3 = new Label();
-            button1 = new Button();
+            openSettingsButton = new Button();
             Title = new Label();
             kryptonToggleSwitch1 = new Krypton.Toolkit.KryptonToggleSwitch();
             SuspendLayout();
@@ -41,7 +41,7 @@
             label1.Location = new Point(-42, 200);
             label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 32);
+            label1.Size = new Size(0, 16);
             label1.TabIndex = 0;
             // 
             // label3
@@ -51,19 +51,20 @@
             label3.Font = new Font("Segoe UI Variable Display Semib", 16F, FontStyle.Bold);
             label3.Location = new Point(101, 500);
             label3.Name = "label3";
-            label3.Size = new Size(428, 57);
+            label3.Size = new Size(218, 30);
             label3.TabIndex = 3;
             label3.Text = "ScamJam is disabled";
             // 
-            // button1
+            // openSettingsButton
             // 
-            button1.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(185, 698);
-            button1.Name = "button1";
-            button1.Size = new Size(261, 64);
-            button1.TabIndex = 4;
-            button1.Text = "Open Settings";
-            button1.UseVisualStyleBackColor = true;
+            openSettingsButton.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            openSettingsButton.Location = new Point(185, 698);
+            openSettingsButton.Name = "openSettingsButton";
+            openSettingsButton.Size = new Size(261, 64);
+            openSettingsButton.TabIndex = 4;
+            openSettingsButton.Text = "Open Settings";
+            openSettingsButton.UseVisualStyleBackColor = true;
+            openSettingsButton.Click += openSettingsButton_Click;
             // 
             // Title
             // 
@@ -72,7 +73,7 @@
             Title.Font = new Font("Segoe UI Variable Display Semib", 30F, FontStyle.Bold);
             Title.Location = new Point(120, 100);
             Title.Name = "Title";
-            Title.Size = new Size(391, 106);
+            Title.Size = new Size(195, 53);
             Title.TabIndex = 1;
             Title.Text = "ScamJam";
             // 
@@ -85,11 +86,11 @@
             // 
             // StatusWindow
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(631, 855);
             Controls.Add(kryptonToggleSwitch1);
-            Controls.Add(button1);
+            Controls.Add(openSettingsButton);
             Controls.Add(Title);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -110,7 +111,7 @@
 
         private System.Windows.Forms.Label label1;
         private Label label3;
-        private Button button1;
+        private Button openSettingsButton;
         private Label Title;
         private Label label2;
         private Krypton.Toolkit.KryptonToggleSwitch kryptonToggleSwitch1;

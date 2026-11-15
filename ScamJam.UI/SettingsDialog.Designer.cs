@@ -1,6 +1,6 @@
 ﻿namespace ScamJam.UI
 {
-  partial class settingsDialog
+  partial class SettingsDialog
   {
     /// <summary>
     /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingsDialog));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsDialog));
             closeButton = new Button();
             settingsTabControl = new TabControl();
             contactsTabPage = new TabPage();
@@ -209,10 +209,10 @@
             // requestCategoryListBox
             // 
             requestCategoryListBox.FormattingEnabled = true;
-            requestCategoryListBox.Items.AddRange(new object[] { "Block known scams and malware", "Block domains belonging to remote access services", "Block malicious popups", "Block domains registered in the past 14 days", "Block commonly abused top level domains", "Block dynamic DNS services", "Block DNS rebinding" });
+            requestCategoryListBox.Items.AddRange(new object[] { "Block domains belonging to remote access services", "Block known scams and malware", "Block malicious popups", "Block dynamic DNS services", "Block DNS rebinding", "Block commonly abused top level domains", "Block domains registered in the past 14 days" });
             requestCategoryListBox.Location = new Point(49, 252);
             requestCategoryListBox.Name = "requestCategoryListBox";
-            requestCategoryListBox.Size = new Size(634, 184);
+            requestCategoryListBox.Size = new Size(634, 256);
             requestCategoryListBox.TabIndex = 4;
             // 
             // networkSubtitle
@@ -324,7 +324,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button2.Location = new Point(581, 189);
+            button2.Location = new Point(581, 477);
             button2.Margin = new Padding(6, 7, 6, 7);
             button2.Name = "button2";
             button2.Size = new Size(464, 57);
@@ -335,7 +335,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(951, 109);
+            linkLabel1.Location = new Point(947, 403);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(145, 32);
             linkLabel1.TabIndex = 11;
@@ -346,7 +346,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(535, 77);
+            label1.Location = new Point(535, 371);
             label1.Name = "label1";
             label1.Size = new Size(557, 64);
             label1.TabIndex = 9;
@@ -355,7 +355,7 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.Location = new Point(49, 392);
+            button1.Location = new Point(91, 477);
             button1.Margin = new Padding(6, 7, 6, 7);
             button1.Name = "button1";
             button1.Size = new Size(229, 57);
@@ -366,7 +366,7 @@
             // updateButton
             // 
             updateButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            updateButton.Location = new Point(49, 290);
+            updateButton.Location = new Point(91, 375);
             updateButton.Margin = new Padding(6, 7, 6, 7);
             updateButton.Name = "updateButton";
             updateButton.Size = new Size(229, 57);
@@ -377,20 +377,20 @@
             // dotnetVersionLabel
             // 
             dotnetVersionLabel.AutoSize = true;
-            dotnetVersionLabel.Font = new Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dotnetVersionLabel.Location = new Point(49, 216);
+            dotnetVersionLabel.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dotnetVersionLabel.Location = new Point(67, 172);
             dotnetVersionLabel.Name = "dotnetVersionLabel";
-            dotnetVersionLabel.Size = new Size(281, 32);
+            dotnetVersionLabel.Size = new Size(277, 32);
             dotnetVersionLabel.TabIndex = 7;
             dotnetVersionLabel.Text = "DotNet version ERROR!!!";
             // 
             // scamjamVersionLabel
             // 
             scamjamVersionLabel.AutoSize = true;
-            scamjamVersionLabel.Font = new Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            scamjamVersionLabel.Location = new Point(49, 145);
+            scamjamVersionLabel.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            scamjamVersionLabel.Location = new Point(57, 128);
             scamjamVersionLabel.Name = "scamjamVersionLabel";
-            scamjamVersionLabel.Size = new Size(305, 32);
+            scamjamVersionLabel.Size = new Size(296, 32);
             scamjamVersionLabel.TabIndex = 6;
             scamjamVersionLabel.Text = "ScamJam version ERROR!!!";
             // 
@@ -398,7 +398,7 @@
             // 
             aboutTitle.AutoSize = true;
             aboutTitle.Font = new Font("Segoe UI Variable Display Semib", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            aboutTitle.Location = new Point(49, 57);
+            aboutTitle.Location = new Point(33, 57);
             aboutTitle.Name = "aboutTitle";
             aboutTitle.Size = new Size(344, 57);
             aboutTitle.TabIndex = 4;
@@ -430,7 +430,7 @@
             outlookcomToolStripMenuItem.Size = new Size(225, 38);
             outlookcomToolStripMenuItem.Text = "Outlook.com";
             // 
-            // settingsDialog
+            // SettingsDialog
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -443,7 +443,7 @@
             Margin = new Padding(6, 7, 6, 7);
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "settingsDialog";
+            Name = "SettingsDialog";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Settings";
             settingsTabControl.ResumeLayout(false);

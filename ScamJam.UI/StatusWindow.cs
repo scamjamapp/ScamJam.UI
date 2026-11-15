@@ -14,11 +14,6 @@ namespace ScamJam.UI
         {
             InitializeComponent();
 
-            //checkBox1 = ToggleOnButtonClickCheckBox;
-
-
-
-
         }
 
         #endregion
@@ -34,5 +29,38 @@ namespace ScamJam.UI
 
         #endregion
 
+        private SettingsDialog _settings;
+        private SettingsDialog Settings
+        {
+            get { return _settings; }
+            set { _settings = value; }
+        }
+
+
+        internal void ShowSettings()
+        {
+            if (Utilities.GetOpenFormInstance<StatusWindow>() is not null)
+            {
+                Dispose();
+            }
+            if (Utilities.GetOpenFormInstance<SettingsDialog>() is null)
+            {
+                using (Settings = new SettingsDialog())
+                    Settings.ShowDialog();
+            }
+            else
+            {
+                var s = Utilities.GetOpenFormInstance<SettingsDialog>();
+                if (s is not null)
+                {
+                    s.Activate();
+                }
+            }
+        }
+
+        private void openSettingsButton_Click(object sender, EventArgs e)
+        {
+            ShowSettings();
+        }
     }
 }

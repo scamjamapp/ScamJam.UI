@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace ScamJam.UI
 {
-    public partial class settingsDialog : Form
+    public partial class SettingsDialog : Form
     {
         #region Constructors
 
-        public settingsDialog()
+        public SettingsDialog()
         {
             InitializeComponent();
             DataSet settings = new DataSet();
